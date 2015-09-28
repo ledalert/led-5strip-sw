@@ -59,7 +59,7 @@ $(OBJECTS): $(BUILD_DIR)%.o: %.c
 
 $(LINK_SCRIPT): libopencm3_stm32f1.a
 
-libopencm3_stm32f1.a: lib/libopencm3/.git
+libopencm3_stm32f1.a: lib/libopencm3/Makefile
 	cd lib/libopencm3; $(MAKE) lib/stm32/f1
 
 lib/libopencm3/.git:
